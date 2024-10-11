@@ -1,9 +1,7 @@
 <Project>
-
   <PropertyGroup>
     <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageVersion Include="Azure.Identity" Version="1.12.0" />
     <PackageVersion Include="Azure.Security.KeyVault.Certificates" Version="4.6.0" />
@@ -29,11 +27,10 @@
     <PackageVersion Include="SharpZipLib" Version="1.4.2" />
     <PackageVersion Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageVersion Include="System.Net.Http" Version="4.3.4" />
-    <PackageVersion Include="System.Text.Json" Version="8.0.4" />
+    <PackageVersion Include="System.Text.Json" Version="8.0.5" />
     <PackageVersion Include="YamlDotNet" Version="15.3.0" />
     <PackageVersion Include="matkoch.spectre.console" Version="0.46.0" />
   </ItemGroup>
-
   <!-- Testing -->
   <ItemGroup>
     <PackageVersion Include="coverlet.msbuild" Version="6.0.2" />
@@ -47,7 +44,6 @@
     <PackageVersion Include="xunit" Version="2.8.1" />
     <PackageVersion Include="xunit.runner.visualstudio" Version="2.8.1" />
   </ItemGroup>
-
   <!-- Roslyn (Nuke.SourceGenerator + Nuke.GlobalTool) -->
   <ItemGroup>
     <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" />
@@ -56,29 +52,24 @@
     <PackageVersion Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="4.10.0" />
     <PackageVersion Include="Microsoft.CodeAnalysis.Workspaces.MSBuild" Version="4.10.0" />
   </ItemGroup>
-
   <!-- MSBuild (Nuke.ProjectModel + Nuke.MSBuildTasks) -->
   <ItemGroup>
     <PackageVersion Include="Microsoft.Build.Locator" Version="1.7.8" />
-
     <PackageVersion Include="Microsoft.Build" Version="17.10.4" />
     <PackageVersion Include="Microsoft.Build.Framework" Version="17.10.4" />
     <PackageVersion Include="Microsoft.Build.Tasks.Core" Version="17.10.4" />
     <PackageVersion Include="Microsoft.Build.Utilities.Core" Version="17.10.4" />
   </ItemGroup>
-
   <ItemGroup Condition="'$(TargetFramework)' == 'net7.0'">
     <PackageVersion Update="Microsoft.Build" Version="17.5.0" />
     <PackageVersion Update="Microsoft.Build.Framework" Version="17.5.0" />
     <PackageVersion Update="Microsoft.Build.Tasks.Core" Version="17.5.0" />
     <PackageVersion Update="Microsoft.Build.Utilities.Core" Version="17.5.0" />
   </ItemGroup>
-
   <ItemGroup Condition="'$(TargetFramework)' == 'net6.0'">
     <PackageVersion Update="Microsoft.Build" Version="16.9.0" />
     <PackageVersion Update="Microsoft.Build.Framework" Version="16.9.0" />
     <PackageVersion Update="Microsoft.Build.Tasks.Core" Version="16.9.0" />
     <PackageVersion Update="Microsoft.Build.Utilities.Core" Version="16.9.0" />
   </ItemGroup>
-
 </Project>
